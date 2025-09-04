@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation Website</title>
+  <style>
+      *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            height: 500px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Arial', sans-serif; /* Choose your preferred font */
+            font-size: 2rem; /* Logo font size */
+            font-weight: bold;
+            color: #ffffff; /* Logo text color */
+            text-transform: uppercase; /* Make it uppercase */
+            letter-spacing: 2px; /* Add space between letters */
+            transition: all 0.3s ease-in-out; /* Add smooth transition for interactive effects */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Hover effect */
+        .navbar-brand:hover {
+            color: #096e66; /* Color change on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .navbar-brand span {
+            color: #099790; /* Highlight the "Tensions" part in a different color */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover span {
+            color: #439699; /* Change "Tensions" color on hover */
+            transform: scale(1.1); /* Zoom in the "Tensions" part */
+        }
+       
+     .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    
+  }
+
+  .footer .logo img {
+    height: 50px;
+    
+  }
+  .footer .social-icons a {
+    color: white;
+    font-size: 3rem;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer .social-icons a:hover {
+    color: #FADA7A;
+  }
+
+  .footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links a:hover {
+    color: #FADA7A;
+  }
+  .social-icons {
+  text-align: center; 
+/* Centers the social icons */
+}
+
+.social-icon {
+  font-size: 30px; /* Adjust size of the icons */
+  color: #fff; /* Icon color */
+  margin-right: 15px; /* Adds space between icons */
+  transition: color 0.3s ease;
+  list-style-type: none;
+  text-decoration: none; /* Smooth transition for color change */
+}
+
+.social-icon:hover {
+  color: #bdd7f3; /* Color on hover */
+}
+
+.social-icons a {
+  display: inline-block; /* Makes the icons line up horizontally */
+}
+
+.social-icons .fab {
+  margin-right: 20px; /* Adds spacing between each social media icon */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Removes margin from the last icon */
+}
+  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Logo in anchor tag with interactive text -->
+        <a class="navbar-brand" href="#">
+            Mind Full <span>Tensions</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Poses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="poses by type.html">Poses By Types</a></li>
+                        <li><a class="dropdown-item" href="poses by benefit.html ">Poses By Benefits</a></li>
+                     
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="course.html">Courses</a></li>
+                        <li><a class="dropdown-item" href="meditation.html">Meditation</a></li>
+                        <li><a class="dropdown-item" href="book.html">Books</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Find Your Inner Peace</h1>
+      <p class="lead">Explore meditation resources and guided sessions for a more peaceful life.</p>
+      <a href="#" class="btn btn-primary btn-lg">Start Meditating</a>
+    </div>
+  </section>
+
+  <!-- Cards with Images Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Meditation Practices</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="full-shot-man-doing-side-plank.jpg" class="card-img-top" alt="Meditation Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Stress Release</h5>
+              <p class="card-text">Stress can be defined as a state of worry or mental tension caused by a difficult situation.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pexels-yan-krukov-8436601-copy-s.jpg" class="card-img-top" alt="Meditation Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Mindfulness Practice</h5>
+              <p class="card-text">Explore mindfulness exercises that can improve your mental clarity and peace.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="grape.jpg" class="card-img-top" alt="Meditation Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Breathing Techniques</h5>
+              <p class="card-text">Discover effective breathing techniques that help with relaxation and stress relief.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meditation Benefits Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Benefits of Meditation</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h3>Reduce Stress</h3>
+          <p>Find calmness and reduce stress through mindful practices.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Improve Focus</h3>
+          <p>Clear your mind and improve mental clarity for better focus.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enhance Emotional Health</h3>
+          <p>Increase self-awareness and improve emotional well-being.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer mt-5"id="demo" >
+    <div class="container">
+      <div class="row">
+        <!-- Logo Column -->
+        <div class="col-md-4 logo">
+          <img src="FINAL 1(1).png" alt="Logo">
+          <p><u>MIND FULLTENTION</u></p>
+        </div>
+
+        <!-- Pages Column -->
+        <div class="col-md-4 footer-links">
+          <h5>Quick Links</h5>
+          <a href="index.html">HOME</a>
+          <a class="poses by type.html" href="#">Poses</a>
+          <a class="course.html" href="#">Service</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Social Media Column -->
+        <div class="col-md-4 social-icons">
+          <h5 class="mb-3">Follow Us</h5>
+          <a href="https://www.facebook.com/" class="fab fa-facebook social-icon"></a>
+          <a href="https://en.wikipedia.org/wiki/Twitter" class="fab fa-twitter social-icon"></a>
+          <a href="https://www.instagram.com/" class="fab fa-instagram social-icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

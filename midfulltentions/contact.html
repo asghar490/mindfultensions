@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        yle>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            height: 500px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Arial', sans-serif; /* Choose your preferred font */
+            font-size: 2rem; /* Logo font size */
+            font-weight: bold;
+            color: #ffffff; /* Logo text color */
+            text-transform: uppercase; /* Make it uppercase */
+            letter-spacing: 2px; /* Add space between letters */
+            transition: all 0.3s ease-in-out; /* Add smooth transition for interactive effects */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Hover effect */
+        .navbar-brand:hover {
+            color: #096e66; /* Color change on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .navbar-brand span {
+            color: #099790; /* Highlight the "Tensions" part in a different color */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover span {
+            color: #439699; /* Change "Tensions" color on hover */
+            transform: scale(1.1); /* Zoom in the "Tensions" part */
+        }
+       
+        .banner
+        {
+            background-color: #3a9289;
+            height: 400px;
+        }
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #213555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3e5879;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    
+  }
+
+  .footer .logo img {
+    height: 50px;
+    
+  }
+  .footer .social-icons a {
+    color: white;
+    font-size: 3rem;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer .social-icons a:hover {
+    color: #FADA7A;
+  }
+
+  .footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links a:hover {
+    color: #FADA7A;
+  }
+  .jumbotron {
+          background-color: #F5F0CD;
+          color: #070a0c;
+      }
+      .social-icons {
+  text-align: center; 
+/* Centers the social icons */
+}
+
+.social-icon {
+  font-size: 30px; /* Adjust size of the icons */
+  color: #fff; /* Icon color */
+  margin-right: 15px; /* Adds space between icons */
+  transition: color 0.3s ease;
+  list-style-type: none;
+  text-decoration: none; /* Smooth transition for color change */
+}
+
+.social-icon:hover {
+  color: #bdd7f3; /* Color on hover */
+}
+
+.social-icons a {
+  display: inline-block; /* Makes the icons line up horizontally */
+}
+
+.social-icons .fab {
+  margin-right: 20px; /* Adds spacing between each social media icon */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Removes margin from the last icon */
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo in anchor tag with interactive text -->
+            <a class="navbar-brand" href="#">
+                Mind Full <span>Tensions</span>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="poses by type.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Poses
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="poses by type.html">Poses By Types</a></li>
+                            <li><a class="dropdown-item" href="poses by benefit.html ">Poses By Benefits</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="course.html">Courses</a></li>
+                            <li><a class="dropdown-item" href="meditation.html">Meditation</a></li>
+                            <li><a class="dropdown-item" href="book.html">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>               
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please fill out the form below.</p>
+        </header>
+
+        <section class="contact-form">
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit mx-auto d-block">Submit</button>
+            </form>
+        </section>
+
+    
+        <footer class="footer mt-5"id="demo" >
+            <div class="container">
+              <div class="row">
+                <!-- Logo Column -->
+                <div class="col-md-4 logo">
+                  <img src="FINAL 1(1).png" alt="Logo">
+                  <p><u>MIND FULLTENTION</u></p>
+                </div>
+        
+                <!-- Pages Column -->
+                <div class="col-md-4 footer-links">
+                  <h5>Quick Links</h5>
+                  <a href="index.html">HOME</a>
+                  <a class="poses by type.html" href="#">Poses</a>
+                  <a class="course.html" href="#">Service</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+        
+                <!-- Social Media Column -->
+                <div class="col-md-4 social-icons">
+                  <h5 class="mb-3">Follow Us</h5>
+                  <a href="https://www.facebook.com/" class="fab fa-facebook social-icon"></a>
+                  <a href="https://en.wikipedia.org/wiki/Twitter" class="fab fa-twitter social-icon"></a>
+                  <a href="https://www.instagram.com/" class="fab fa-instagram social-icon"></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

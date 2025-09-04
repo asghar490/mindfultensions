@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotolab</title>
+    <link rel="shortcut icon" href="LOGO2.png" type="x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            height: 2000px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Arial', sans-serif; /* Choose your preferred font */
+            font-size: 2rem; /* Logo font size */
+            font-weight: bold;
+            color: #ffffff; /* Logo text color */
+            text-transform: uppercase; /* Make it uppercase */
+            letter-spacing: 2px; /* Add space between letters */
+            transition: all 0.3s ease-in-out; /* Add smooth transition for interactive effects */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Hover effect */
+        .navbar-brand:hover {
+            color: #096e66; /* Color change on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .navbar-brand span {
+            color: #099790; /* Highlight the "Tensions" part in a different color */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover span {
+            color: #595c5c; /* Change "Tensions" color on hover */
+            transform: scale(1.1); /* Zoom in the "Tensions" part */
+        }
+        .banner2
+        {
+            background-color: #4b4d4c;
+            height: 400px;
+        }
+
+        .button
+        {
+            background-color: white;
+            border-radius: 20px;
+            margin: 15px;
+            padding: 5px;
+            width: 100px;
+            border: 2px solid rgb(246, 249, 250);
+        }
+        .button:hover
+        {
+            background-color: rgb(221, 213, 213);
+        }
+
+        /* Basic card styling */
+.card {
+  width: 270px;
+  height: 430px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 97%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);  /* Slight upward movement */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Darker shadow */
+}
+
+.card:hover img {
+  transform: scale(1.1);  /* Slight zoom effect on image */
+  transition: transform 0.3s ease;
+}
+
+  .jumbotron {
+          background-color: #F5F0CD;
+          color: #070a0c;
+      }
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-container:hover .image {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image-container:hover .image {
+  transform: rotate(10deg) scale(1.1); /* Rotate and zoom */
+  opacity: 0.8; /* Slightly fade the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.container1{
+  display: flex;
+  text-decoration: none;
+  padding-left: 125px;
+}
+
+.jumbotron {
+        background-color: #F5F0CD;
+        color: #070a0c;
+    }
+    .container-fluid1{
+      background-color: #e7ecec;
+    }
+    .container-fluid2{
+      background-color: #e7ecec;
+    }
+    .container-fluid3{
+      background-color: #e7ecec;
+    } 
+      .container-fluid1:hover{
+      background-color: #d8e5e5;
+    }
+    .container-fluid2:hover{
+     
+      background-color: #d8e5e5;
+    }
+    .container-fluid3:hover{
+      background-color: #d8e5e5;
+    }
+
+
+    .social-icons {
+  text-align: center; 
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 30px; /* Adjust size of the icons */
+  color: #fff; /* Icon color */
+  margin-right: 15px; /* Adds space between icons */
+  transition: color 0.3s ease;
+  list-style-type: none;
+  text-decoration: none; /* Smooth transition for color change */
+}
+
+.social-icon:hover {
+  color: #bdd7f3; /* Color on hover */
+}
+
+.social-icons a {
+  display: inline-block; /* Makes the icons line up horizontally */
+}
+
+.social-icons .fab {
+  margin-right: 20px; /* Adds spacing between each social media icon */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Removes margin from the last icon */
+}.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    
+  }
+
+  .footer .logo img {
+    height: 50px;
+    
+  }
+  .footer .social-icons a {
+    color: white;
+    font-size: 3rem;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer .social-icons a:hover {
+    color: #FADA7A;
+  }
+
+  .footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links a:hover {
+    color: #FADA7A;
+  }
+
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Logo in anchor tag with interactive text -->
+        <a class="navbar-brand" href="#">
+            Mind Full <span>Tensions</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Poses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="poses by type.html">Poses By Types</a></li>
+                        <li><a class="dropdown-item" href="poses by benefit.html ">Poses By Benefits</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="course.html">Courses</a></li>
+                        <li><a class="dropdown-item" href="meditation.html">Meditation</a></li>
+                        <li><a class="dropdown-item" href="book.html">Books</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- nAVBAR END -->
+ 
+    <!-- BANNER -->
+  <div class="container-fluid banner2 text-center">
+    <div class="row">
+        <div class="col-md-12">
+          <br><br><br>
+            <h1 style="font-size: 50px;">STAY FIT<br><span style="font-size: 80px; color: rgb(162, 196, 190) ;">STAY STRONG</span> </h1>
+            <!-- <P>Meditation can give you a sense of calm, peace and balance that can benefit your emotional well-being and your overall health.<br>  You also can use it to relax and cope with stress by focusing on something that calms you. Meditation can help you learn to stay centered and keep inner peace</P> -->
+        </div>
+    </div>
+  </div>
+   <!-- BANNER END -->
+    <br>
+    <div class="container1">
+   <div class="image-container">
+    <img src="rope2.jpg" alt="Sample Image" class="image">
+    <div class="overlay">
+      <div class="text">Rope</div>
+    </div>
+  </div>
+  <br>
+  <div class="image-container">
+    <img src="card img 5.jpg" alt="Sample Image" class="image">
+    <div class="overlay">
+      <div class="text">Fitness</div>
+    </div>
+  </div>
+  <br>
+  <div class="image-container">
+    <img src="card img 6.jpg" alt="Sample Image" class="image">
+    <div class="overlay">
+      <div class="text">Gym</div>
+    </div>
+  </div>
+ </div>
+
+        
+  <div class="container-fluid1 text-center py-2">
+    <div class="row">
+        <div class="col-md-7">
+            <img src="bicep3.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <h1 style="text-align: left;"><span style="color: rgb(172, 202, 199);">BICEP  </span>MUSCLE <br> </h1>
+            <p style="text-align:justify;">biceps exercise is a physical activity that strengthens and tones the bicep muscles in the upper arm. Bicep exercises can be performed with dumbbells, barbells, or cables. 
+                .</p> <div class="col-md-2"> </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- container2 -->
+  <div class="container-fluid2 text-center">
+    <div class="row">
+      <div class="col-md-2"> </div>
+        <div class="col-md-3">
+            <h1 style="text-align: left;"><span style="color: rgb(172, 202, 199);">TRICEP</span>MUSCLE <br> </h1>
+            <p style="text-align:justify;"> Exercises such as push-ups, shoulder presses, dips and bench presses target the triceps. In other words, movements that involve upper body pushing and elbow extension will activate the triceps brachii. Body builders use isolated exercises to “target” the triceps; specifically, to train certain heads.</p>
+        </div>
+        <div class="col-md-7">
+            <img src="tricep.jpeg" class="img-fluid">
+        </div>
+       
+       
+    </div>
+  </div>
+
+  <!-- container 3 -->
+  <div class="container-fluid3  text-center">
+    <div class="row">
+      
+        <div class="col-md-7">
+            <img src="leg3.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <h1 style="text-align: left;"><span style="color: rgb(172, 202, 199);">LEG </span> <br> </h1>
+            <p style="text-align:justify;"> Fitness leg exercises are physical activities that strengthen and tone the muscles in your legs. They help improve your balance and stability, and can help correct muscle imbalances. .</p>
+            <div class="col-md-3"> </div>
+        </div>
+        
+    </div>
+  </div>
+   <!-- BANNER END -->
+<br><br>
+
+
+
+ <!-- cards -->
+<div class="container-fluid cardbox py-4">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <a href=""><img src="courses.jpg" class="img-fluid" >
+        </a>
+        <h1>PROTEIN</h1>
+        <p> Proteins are made up of chemical 'building blocks' called amino acids</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <a href=""><img src="suppliments.jfif"class="img-fluid" >
+        </a>
+        <h1>SUPPLEMENT</h1>
+        <p>A dietary supplement is a manufactured product intended to supplement a person's diet by taking a pill, capsule, tablet, powder, or liquid </p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <a href=""><img src="creatine.jpg" >
+        </a>
+        <h1>CREATINE</h1>
+        <p>Creatine is a compound that comes from three amino acids. Creatine is found mostly in your body's muscles as well as in the brain</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <a href=""><img src="whey.jpeg" >
+        </a>
+        <h1>Whey Protein</h1>
+        <p> Whey protein is excellent for promoting muscle growth and maintenance</p>
+      </div>
+    </div>
+   
+  </div>
+</div>
+<!-- Benefits of fitness
+                Physical health: Regular exercise can help you maintain a healthy weight, strengthen your bones and muscles, and improve your cardiovascular health. 
+                Mental health: Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                How to achieve fitness 
+                Exercise: You can try cardio, stretching, weight training, or outdoor games.
+                Diet: Eat a balanced diet.
+                Rest: Get enough sleep.
+                Examples of fitness activities Morning walk, Cricket, Football, and Volleyball. -->
+   <!-- cards end -->
+  <!-- BANNER WITH VIDEO -->
+<div class="container-fluid video-banner">
+    <video autoplay loop muted playsinline>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+        <h1></h1>
+    </div>
+</div>
+<footer class="footer mt-5"id="demo" >
+  <div class="container">
+    <div class="row">
+      <!-- Logo Column -->
+      <div class="col-md-4 logo">
+        <img src="FINAL 1(1).png" alt="Logo">
+        <p><u>MIND FULLTENTION</u></p>
+      </div>
+
+      <!-- Pages Column -->
+      <div class="col-md-4 footer-links">
+        <h5>Quick Links</h5>
+        <a href="index.html">HOME</a>
+        <a class="poses by type.html" href="#">Poses</a>
+        <a class="course.html" href="#">Service</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="col-md-4 social-icons">
+        <h5 class="mb-3">Follow Us</h5>
+        <a href="https://www.facebook.com/" class="fab fa-facebook social-icon"></a>
+        <a href="https://en.wikipedia.org/wiki/Twitter" class="fab fa-twitter social-icon"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram social-icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

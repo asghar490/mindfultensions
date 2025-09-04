@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotolab</title>
+  
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="shortcut icon" href="LOGO2.png" type="x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            height: 2000px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Arial', sans-serif; /* Choose your preferred font */
+            font-size: 2rem; /* Logo font size */
+            font-weight: bold;
+            color: #ffffff; /* Logo text color */
+            text-transform: uppercase; /* Make it uppercase */
+            letter-spacing: 2px; /* Add space between letters */
+            transition: all 0.3s ease-in-out; /* Add smooth transition for interactive effects */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Hover effect */
+        .navbar-brand:hover {
+            color: #096e66; /* Color change on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .navbar-brand span {
+            color: #099790; /* Highlight the "Tensions" part in a different color */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover span {
+            color: #439699; /* Change "Tensions" color on hover */
+            transform: scale(1.1); /* Zoom in the "Tensions" part */
+        }
+        /* .banner2
+        {
+          background-color:  rgb(193, 196, 197);
+            height: 550px;
+        }
+        .banner2 p{
+          color: #fff;
+          text-align: center;
+        
+        }
+        .banner2 img{
+          width: 1360px;
+          
+        } */
+        .banner3{
+          background-color: #464747;
+          height: 380px;
+        }
+        .banner3 button{
+          background-color: white;
+            border-radius: 20px;
+            margin: 15px;
+            padding: 5px;
+            width: 125px;
+            border: 2px solid rgb(246, 249, 250);
+            height: 44px;
+        }
+        .banner3 button:hover{
+          background-color: #726f6f;
+        }
+        .button
+        {
+            background-color: white;
+            border-radius: 20px;
+            margin: 15px;
+            padding: 5px;
+            width: 100px;
+            border: 2px solid rgb(246, 249, 250);
+        }
+        .button:hover
+        {
+            background-color: rgb(221, 213, 213);
+        } .social-icons {
+  text-align: center; 
+/* Centers the social icons */
+}
+
+.social-icon {
+  font-size: 30px; /* Adjust size of the icons */
+  color: #fff; /* Icon color */
+  margin-right: 15px; /* Adds space between icons */
+  transition: color 0.3s ease;
+  list-style-type: none;
+  text-decoration: none; /* Smooth transition for color change */
+}
+
+.social-icon:hover {
+  color: #bdd7f3; /* Color on hover */
+}
+
+.social-icons a {
+  display: inline-block; /* Makes the icons line up horizontally */
+}
+
+.social-icons .fab {
+  margin-right: 20px; /* Adds spacing between each social media icon */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Removes margin from the last icon */
+}
+
+        /* Basic card styling */
+.card {
+  width: 270px;
+  height: 400px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);  /* Slight upward movement */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Darker shadow */
+}
+
+.card:hover img {
+  transform: scale(1.1);  /* Slight zoom effect on image */
+  transition: transform 0.3s ease;
+}
+            /* Custom CSS styles */
+   
+            .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    
+  }
+
+  .footer .logo img {
+    height: 50px;
+    
+  }
+  .footer .social-icons a {
+    color: white;
+    font-size: 3rem;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer .social-icons a:hover {
+    color: #FADA7A;
+  }
+
+  .footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links a:hover {
+    color: #FADA7A;
+  }
+  .jumbotron {
+          background-color: #F5F0CD;
+          color: #070a0c;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo in anchor tag with interactive text -->
+            <a class="navbar-brand" href="#">
+                Mind Full <span>Tensions</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Poses
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="poses by type.html">Poses By Types</a></li>
+                            <li><a class="dropdown-item" href="poses by benefit.html">Poses By Benefits</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="course.html">Courses</a></li>
+                            <li><a class="dropdown-item" href="meditation.html">Meditation</a></li>
+                            <li><a class="dropdown-item" href="book.html">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>               
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="demo" data-bs-ride="carousel" class="carousel slide ">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="carousal2.PNG" class="d-block" style="width:100%;">
+            <div class="carousel-caption">
+                <h5> Fitness</h5>
+                <p>Stay Fit Stay Strong</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="rope1.jpg" class="d-block" style="width:100%;">
+            <div class="carousel-caption">
+              <h5>Jumping </h5>
+              <p>Improved muscular power - enhanced athletic performance</p>  
+            </div>
+        </div>
+        <div class="carousel-item active">
+           
+            <img src="carousal.jpg" class="d-block" style="width:100%;">
+            <div class="carousel-caption">
+              <h5>Leg</h5>
+              <p>Regular exercise can help you maintain a healthy weight</p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- <div class="container-fluid banner3 text-center mb-5">
+  <div class="row">
+      <div class="col-md-12">
+          <img src="dumbl.png" class="img-fluid">
+      </div>
+
+  </div>
+</div> -->
+   <!-- BANNER END -->
+
+   <div class="container-fluid banner3 text-center">
+    <div class="row">
+        <div class="col-md-12">
+           
+            <h1 style="font-size: 50px;"><br><span style="font-size: 80px; color: rgb(195, 202, 204);">Yoga</span> </h1>
+            <h3><b>Yoga is a mind and body practice that can build strength and flexibility. It may also help manage pain and reduce stress. Various styles of yoga combine physical postures, breathing techniques, and meditation.</b></h3>
+            <a href="poses by type.html"><button class="button">Explore</button></a>
+        </div>
+    </div>
+  </div> 
+ 
+
+
+
+<!-- modal -->
+  <div class="container1 mt-5 " id="demo">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="card img 4.jpg">
+                <div class="card-body">
+                    <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+                    <h5></h5>
+                    <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal1' >view</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="card img 3.jpg">
+                <div class="card-body">
+                    <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+                    <h5></h5>
+                    <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal2' >view</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="pexels-mart-production-8032736.jpg">
+                <div class="card-body">
+                    <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+                    <h5></h5>
+                    <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal3' >view</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <img src="card img 2.jpg">
+              <div class="card-body">
+                  <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+                  <h5></h5>
+                  <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal4' >view</button>
+              </div>
+          </div>
+      </div> <div class="col-md-4">
+        <div class="card">
+            <img src="card img 8.jpg">
+            <div class="card-body">
+                <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+                <h5></h5>
+                <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal5' >view</button>
+            </div>
+        </div>
+    </div> <div class="col-md-4">
+      <div class="card">
+          <img src="bicep2.jpg">
+          <div class="card-body">
+              <!-- <div class="card-text"><h1 class="card-title">Choco</h1></div> -->
+              <h5></h5>
+              <button class="btn btn-outline-info " data-bs-toggle="modal"data-bs-target='#modal6' >view</button>
+          </div>
+      </div>
+  </div>
+    
+            </div>
+            <div class="modal" id="modal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Stay Strong</h5>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                    Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                    How to achieve fitness 
+                                    Exercise: </div>
+                                <div class="col-6"><img src="card img 4.jpg" class="img-fluid"></div>
+                               </div>
+                            </div>
+                            <div class="modal-footer">
+                               
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                            </div>
+                        </div>
+                       
+                    </div>                   
+                </div>
+                <div class="modal" id="modal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Stay Strong</h5>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                        Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                        How to achieve fitness 
+                                        Exercise: </div>
+                                    <div class="col-6"><img src="card img 3.jpg" class="img-fluid"></div>
+                                   </div>
+                                </div>
+                                <div class="modal-footer">
+                                  
+                                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="modal" id="modal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Stay Strong</h5>
+                                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                            Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                            How to achieve fitness 
+                                            Exercise:</div>
+                                        <div class="col-6"><img src="pexels-mart-production-8032736.jpg" class="img-fluid"></div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      
+                                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                        <div class="modal" id="modal4">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>Stay Strong</h5>
+                                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                                Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                                How to achieve fitness 
+                                                Exercise:</div>
+                                            <div class="col-6"><img src="card img 2.jpg" class="img-fluid"></div>
+                                           </div>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="modal" id="modal5">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Stay Strong</h5>
+                                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                                    Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                                    How to achieve fitness 
+                                                    Exercise:</div>
+                                                <div class="col-6"><img src="card img 8.jpg" class="img-fluid"></div>
+                                               </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <div class="modal" id="modal6">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5>Stay Strong</h5>
+                                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-6">Exercise can improve your memory and concentration, and give you a sense of mental peace. 
+                                                        Everyday life: Fitness can help you perform everyday tasks without feeling tired. 
+                                                        How to achieve fitness 
+                                                        Exercise:</div>
+                                                    <div class="col-6"><img src="bicep2.jpg" class="img-fluid"></div>
+                                                   </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  
+                                                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">CANCEL</button>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                </div>
+        <div class="container" id="demo"></div>
+  
+
+
+        <footer class="footer"id="demo" >
+            <div class="container">
+              <div class="row">
+                <!-- Logo Column -->
+                <div class="col-md-4 logo">
+                  <img src="FINAL 1(1).png" alt="Logo">
+                  <p><u>MIND FULLTENTION</u></p>
+                </div>
+        
+                <!-- Pages Column -->
+                <div class="col-md-4 footer-links">
+                  <h5>Quick Links</h5>
+                  <a href="index.html">HOME</a>
+                  <a class="poses by type.html" href="#">Poses</a>
+                  <a class="course.html" href="#">Service</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+        
+                <!-- Social Media Column -->
+                <div class="col-md-4 social-icons">
+                  <h5 class="mb-3">Follow Us</h5>
+                  <a href="https://www.facebook.com/" class="fab fa-facebook social-icon"></a>
+                  <a href="https://en.wikipedia.org/wiki/Twitter" class="fab fa-twitter social-icon"></a>
+                  <a href="https://www.instagram.com/" class="fab fa-instagram social-icon"></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+</body>
+</html>

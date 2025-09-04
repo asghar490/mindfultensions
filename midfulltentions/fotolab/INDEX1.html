@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotolab</title>
+    <link rel="shortcut icon" href="LOGO2.png" type="x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            height: 2000px;
+            font-family: 'Roboto', sans-serif;
+        }
+            /* Custom CSS styles */
+    .welcome-message {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .navbar {
+      margin-bottom: 20px;
+      background-color: black;
+    }
+
+    #userGreeting {
+      display: none;
+    }
+
+    #greetingHeader {
+      display: none;
+    }
+
+    
+    .navbar-brand img {
+  max-height: 80px; /* Increase this value to make the logo larger */
+  max-width: auto; /* Optional: Define max-width if needed */
+  margin-right: 10px;
+}
+.dropdown-menu
+
+{
+    background-color: rgb(7, 8, 8);
+}
+.dropdown-item
+{
+    color: aliceblue;
+}
+/* navbar end */
+
+.banner
+{
+    background: url(b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: -20px;
+}
+.banner2
+{
+    height: 250px;   
+
+}
+.banner3
+{
+    height: 300px;
+}
+.cards
+{
+    height: 200px;
+}
+
+.video-banner {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .video-banner video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .video-overlay h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .video-overlay p {
+        font-size: 1.5rem;
+    }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="white logo.png" >FOTOLAB 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#fineArt">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">CATEGORY</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#popularItems">Cameras</a></li>
+              <li><a class="dropdown-item" href="#sponsoredAuctions"> Camera lenses</a></li>
+              <li><a class="dropdown-item" href="#upcomingAuctions"> Pro audio</a></li>
+              <li><a class="dropdown-item" href="#completedAuctions"> Memory cards &amp; media</a></li>
+              <li><a class="dropdown-item" href="#feedback">Tripods &amp; supports</a></li>
+              <li><a class="dropdown-item" href="#aboutUs"> Lighting &amp; Studio</a></li>
+              <li><a class="dropdown-item" href="#contactUs"> Camera bags &amp; cases</a></li>
+              <li><a class="dropdown-item" href="#contactUs">Miscellaneous accessories </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">BRANDS
+              
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#popularItems"> </a></li>
+              <li><a class="dropdown-item" href="#sponsoredAuctions"> </a></li>
+              <li><a class="dropdown-item" href="#upcomingAuctions"> </a></li>
+              <li><a class="dropdown-item" href="#completedAuctions"> </a></li>
+              <li><a class="dropdown-item" href="#feedback"></a></li>
+              <li><a class="dropdown-item" href="#aboutUs"> </a></li>
+              <li><a class="dropdown-item" href="#contactUs"> </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fineArt">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fineArt">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-text text-white" id="greetingHeader">Welcome, <span id="displayName"></span></div>
+    </div>
+  </nav>
+
+  <!-- nAVBAR END -->
+
+   <!-- BANNER -->
+  <div class="container-fluid banner">
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div>
+  </div>
+   <!-- BANNER END -->
+
+    <!-- BANNER -->
+  <div class="container-fluid banner2 text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="font-size: 50px;">Discovering<br><span style="font-size: 80px; color: rgb(166, 149, 182);">THE WORLD</span> </h1>
+            <P>A lot of photographers think that if they buy a better camera they'll be able to take better photographs. <br> A better camera won't do a thing for you if you don't have anything in your head or in your heart</P>
+        </div>
+    </div>
+  </div>
+   <!-- BANNER END -->
+
+      <!-- BANNER -->
+  <div class="container-fluid banner3 text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="ban3.png" class="img-fluid">
+        </div>
+    </div>
+  </div>
+   <!-- BANNER END -->
+         <!-- BANNER -->
+  <div class="container-fluid banner4 text-center">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <img src="ban5.png" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <h1 style="text-align: left;"><span style="color: rgb(184, 153, 212);">Reveal </span>images <br> on your smart lenses </h1>
+            <p style="text-align:justify;">Smart cameras have revolutionized how we capture and experience moments, offering advanced features that go beyond traditional photography. One standout capability is the ability to reveal images instantly, whether through touchscreens, mobile apps, or cloud connectivity. This feature lets you view, enhance, and organize your photos seamlessly, saving time and effort. Whether you're capturing precious family moments or monitoring your home for security, smart cameras ensure you have immediate access to every detail. With real-time previews and intuitive interfaces, these devices bring convenience and clarity, making your photography and surveillance smarter than ever.</p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+  </div>
+   <!-- BANNER END -->
+
+   <!-- cards -->
+<div class="container cards">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="">                <img src="canon.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="">                <img src="nikon.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="">                <img src="sony.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- cards end -->
+  <!-- BANNER WITH VIDEO -->
+<div class="container-fluid video-banner">
+    <video autoplay loop muted playsinline>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+        <h1>Capture the World</h1>
+    </div>
+</div>
+</body>
+</html>
